@@ -13,7 +13,7 @@
     <!-- BASICAMENTE EL CUERPO DE LA PAGINA, MEJOR DICHO COMO SE VE Y QUE APARECE EN PANTALLA -->
     <body>
         <!-- ESTA COSA ES PARA LAS LETRAS DEL TITULO, SEPARADAS PARA PODER PONERLE DIFERENTES COLORES -->
-          <div id="seccion-1" class="paginas">
+          <div id="seccion-1" class="paginas"></div>
 
         <div style="text-align: center">
             <h1>
@@ -85,7 +85,6 @@
                     
             </li>
         </ul>
-    </div>
         <!-- AQUI TERMINA LA LISTA DE PERSONAJES DE LA SECCION 1-->
 
         <!-- SCRIPT PARA LA REPRODUCCION DE AUDIO/VIDEO -->
@@ -120,7 +119,7 @@
 
 
         <!-- AQUI COMIENZA LA SECCIÓN 2 CON SUS COSAS POR SEPARADO-->
-        <div id="seccion-2" class="paginas">
+        <div id="seccion-2" class="paginas" style="display: none;">
 
 
         <ul style="padding: 0;">
@@ -133,13 +132,10 @@
                     Faust (Hangul: 파우스트, pa-u-seu-teu) está designado Pecador #2 del departamento LCB de Limbus Company.<br><br>
                 Faust es una mujer observadora e inteligente con una ligera actitud sabelotodo. 
                 Fue la primera pecadora en afiliarse a Limbus Company, habiendo pasado el tiempo previo reclutando a los miembros de la LCB y desarrollándolos
+                </p>
             </li>
         </ul>
-
-
-
     </div>
-
 
 
 
@@ -165,7 +161,7 @@
                 p.style.display = "none";
             });
 
-            document.getElementById(idDestino);
+            const destino = document.getElementById(idDestino);
                 if (destino){
                     style.display = "block";
                     window.scrollTo(0, 0);
