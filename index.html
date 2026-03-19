@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- DEFINICIONES GENERALES ME AHORRO TIEMPO AUNQUE A VECES HAY QUE ESPECIFICAR COMO CON DON QUIXOTE -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Limbus Company</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <!-- BASICAMENTE EL CUERPO DE LA PAGINA, MEJOR DICHO COMO SE VE Y QUE APARECE EN PANTALLA -->
+    <body>
+        <!-- ESTA COSA ES PARA LAS LETRAS DEL TITULO, SEPARADAS PARA PODER PONERLE DIFERENTES COLORES -->
+          <div id="seccion-1" class="paginas">
+
+        <div style="text-align: center">
+            <h1>
+                <span style="color: red; font-size: 100px;">Limbus</span>
+                <span style="color: gold; font-size: 100px;">Company</span>
+            </h1>
+        </div>
+        <!-- ACA TERMINA-->
+
+        <div style="text-align: center; font-size: 45px;">
+            <p>Esta es una página con algunos personajes del juego Limbus Company</p>
+        </div>
+
+        <ul style="padding: 0;">
+
+            <!-- AQUI EMPIEZA LA LISTA CON LOS PERSONAJES, CADA UNO CON SU IMAGEN Y DESCRIPCION, ADEMAS DE UN AUDIO O VIDEO PARA CADA UNO -->
+            <li class="personaje">
+                Dante
+                <img src="dante.png" alt="Dante" id="danteh-img">
+                <audio id="danteh" src="danteh.mp3"></audio>
+                <p class="personaje-descripcion">
+                    Dante (Hangul: 단테, Dante) es designado Pecador #10 y Gerente Ejecutivo del departamento LCB de la Compañía Limbus.
+                    Dante es un gerente bastante realista y atento, con tendencia a hacer bromas. <br><br>
+                    El juego comienza con él borrando su memoria a propósito y reemplazando su cabeza con un reloj protésico, 
+                    solo para ser contactado y reclutado por la Compañía Limbus minutos después.<br><br>
+                    Dante actúa como el personaje principal siempre presente de la Compañía Limbus, 
+                    recorriendo torpemente el viaje infernal de guiar a los Pecadores por sus caminos hacia las Ramas Doradas.
+                </p>
+            </li>
+
+            <li class="personaje">
+                Ryoshu
+                <img src="ryoushu.png" alt="Ryoshu" id="ryochu-img">
+                <video id="ryochu" controls>
+                    <source src="ryochu.mp4" type="video/mp4">
+                </video>
+                <p class="personaje-descripcion">
+                    Ryōshū (Hangul: 료슈, ryo-syu; Japanese: 良秀, りょうしゅう, ryōshū) es designado pecador número 4 del departamento LCB de Limbus Company.<br><br>
+                    Ryōshū es una mujer ingobernable con una fascinación por el arte que la define de forma única, con poca tolerancia hacia lo que la desinteresa o la ofende.<br><br>
+                    Anteriormente, formó parte de un grupo de figuras poderosas relacionadas con los Cinco Dedos de los Backstreets, conocido como la Casa de las Arañas, antes de unirse a la Compañía Limbus.
+                    Ella es el personaje central del Canto IX: The Unsevering
+                </p>
+            </li>
+            
+            <li class="personaje">
+                Don Quixote
+                <img src="donquijote.png" alt="Don Quixote" id="donquijote-img">
+                <audio id="donquijote" src="donquijote.mp3"></audio>
+                <p class="personaje-descripcion">
+                    Don Quijote (Hangul: 돈키호테, Don khihothe), nombre real Sancho, está designado Pecador #3 del departamento LCB de Limbus Company.
+                    Don Quijote es una mujer revoltosa y firme con un fuerte sentido de la justicia.<br><br>
+                    Ella no quiere nada más que estar afiliada a la Reparadores. 
+                    Ella idolatra tanto hasta el punto de la ilusión, habiendo obtenido su propio Número de Identificación de Fixer antes del reclutamiento.
+                </p>
+            </li>
+
+            <li class="personaje">
+                Mersault
+                <img src="mersault.png" alt="Mersault" id="mersault-img">
+                <video id="mersault" controls>
+                    <source src="mersault.mp4" type="video/mp4">
+                </video>
+                <p class="personaje-descripcion">
+                    Meursault (Hangul: 뫼르소, Moereusoes) el Pecador N.° 5 del departamento LCB de la Compañía Limbus.
+                    Meursault es un hombre reservado y complaciente. Desea que se le comunique con claridad.<br><br> 
+                    Anteriormente estuvo afiliado a N Corp. 
+                    No llegó a formarse una opinión sobre sus ideales antes de unirse a Limbus Company.
+                </p>
+                    
+            </li>
+        </ul>
+    </div>
+        <!-- AQUI TERMINA LA LISTA DE PERSONAJES DE LA SECCION 1-->
+
+        <!-- SCRIPT PARA LA REPRODUCCION DE AUDIO/VIDEO -->
+        <script>
+            document.getElementById("danteh-img").onclick=function(){
+                document.getElementById("danteh").currentTime=0;
+                document.getElementById("danteh").play();
+            }
+
+            document.getElementById("ryochu-img").onclick=function(){
+                document.getElementById("ryochu").currentTime=0;
+                document.getElementById("ryochu").play();
+            }
+
+            document.getElementById("donquijote-img").onclick=function(){
+                document.getElementById("donquijote").currentTime=0;
+                document.getElementById("donquijote").play();
+            }
+
+            document.getElementById("mersault-img").onclick=function(){
+                document.getElementById("mersault").currentTime=0;
+                document.getElementById("mersault").play();
+            }
+
+        </script>
+        
+    
+        <!-- AQUI TERMINA EL SCRIPT PARA LA REPRODUCCION DE AUDIO/VIDEO -->
+
+
+
+
+
+        <!-- AQUI COMIENZA LA SECCIÓN 2 CON SUS COSAS POR SEPARADO-->
+        <div id="seccion-2" class="paginas">
+
+
+        <ul style="padding: 0;">
+
+            <li class="personaje">
+                Faust
+                <img src="faust.png" alt="Faust" id="faust-img">
+                <audio id="faust" src="faust.mp3"></audio>
+                <p class="personaje-descripcion">
+                    Faust (Hangul: 파우스트, pa-u-seu-teu) está designado Pecador #2 del departamento LCB de Limbus Company.<br><br>
+                Faust es una mujer observadora e inteligente con una ligera actitud sabelotodo. 
+                Fue la primera pecadora en afiliarse a Limbus Company, habiendo pasado el tiempo previo reclutando a los miembros de la LCB y desarrollándolos
+            </li>
+        </ul>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+        <footer class="paginas">
+            <p style="text-align: center; font-size: 20px;">Seleccione la página</p>
+            <div class="caja-numero">
+                <a href="seccion-1" class="boton-numero">1</a>
+                <a href="seccion-2" class="boton-numero">2</a>
+                <a href="seccion-3" class="boton-numero">3</a>
+            </div>
+        </footer>
+
+        <script> function cambiarPagina(idDestino) {
+            const paginas = document.querySelectorAll(".paginas");
+            paginas.forEach(p => {
+                p.style.display = "none";
+            });
+            document.getElementById(idDestino).style.display = "block";
+            window.scrollTo(0, 0);
+        }
+        </script>
+    </body>
+</html>
