@@ -157,13 +157,19 @@
             </div>
         </footer>
 
-        <script> function cambiarPagina(idDestino) {
-            const paginas = document.querySelectorAll(".paginas");
+        <script> 
+            function cambiarPagina(idDestino) {
+                const paginas = document.querySelectorAll(".paginas");
+
             paginas.forEach(p => {
                 p.style.display = "none";
             });
-            document.getElementById(idDestino).style.display = "block";
-            window.scrollTo(0, 0);
+
+            document.getElementById(idDestino);
+                if (destino){
+                    style.display = "block";
+                    window.scrollTo(0, 0);
+                }
         }
         </script>
     </body>
